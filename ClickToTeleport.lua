@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification",{
     Title = "Sentral X";
-    Text = "Hover your mouse over where you want to teleport, then leftclick.";
+    Text = "Hover your mouse over where you want to teleport, hold control, then leftclick.";
 })
 
 local Plr = game:GetService("Players").LocalPlayer
