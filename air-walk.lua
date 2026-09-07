@@ -35,7 +35,7 @@ if not _G.SentralX_AirWalk_Listener then
             if not toggle.Value then
                 local char = LocalPlayer.Character
                 if char and char:FindFirstChildOfClass("Humanoid") then
-                    char:FindFirstChildOfClass("Humanoid").HipHeight = 0
+                    char:FindFirstChildOfClass("Humanoid").HipHeight = 2
                 end
                 continue
             end
