@@ -1,0 +1,13 @@
+game.StarterGui:SetCore("SendNotification",{
+    Title = "Sentral X";
+    Text = "Hover your mouse over where you want to teleport, then leftclick.";
+})
+
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
+
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+if not Mouse.Target then return end
+Plr.Character:MoveTo(Mouse.Hit.p)
+end)
